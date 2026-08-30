@@ -28,7 +28,15 @@ Billing Technical General
  └─────┼─────────┘
        ↓
 Structured Support Response
-Example
+## Example
+
+![Support Analysis](docs/analysis.png)
+
+A request such as:
+
+> I was charged twice for my subscription.
+
+is routed to the **Billing Agent**, which returns the response together with the routing reasoning and resolution status.
 
 A request such as:
 
@@ -66,13 +74,4 @@ Project focus
 
 This project demonstrates practical Applied AI / LLM Engineering patterns including AI-based routing, specialist-agent orchestration, structured outputs, API integration, validation, and testable service architecture.
 
-## Example
-
-![Support Analysis](docs/analysis.png)
-
-A request such as:
-
-> I was charged twice for my subscription.
-
-is routed to the **Billing Agent**, which returns the response together with the routing reasoning and resolution status.
 
