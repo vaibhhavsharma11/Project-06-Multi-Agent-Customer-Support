@@ -45,3 +45,4 @@ class SupportResponse(BaseModel):
     escalated: bool
     escalation_reason: str | None = None
     agent: str
+    routing_reason: str

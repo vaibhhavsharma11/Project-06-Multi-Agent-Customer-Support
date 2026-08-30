@@ -13,7 +13,6 @@ class SupportService:
         router: RouterAgent,
     ) -> None:
         self.router = router
-
         self.agents = {
             "billing": BillingAgent(),
             "technical": TechnicalAgent(),
@@ -54,4 +53,5 @@ class SupportService:
             escalated=result.escalated,
             escalation_reason=result.escalation_reason,
             agent=decision.category,
-        )
+            routing_reason=decision.reasoning,
+)
