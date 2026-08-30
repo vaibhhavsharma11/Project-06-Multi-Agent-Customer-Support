@@ -14,20 +14,6 @@ An AI-powered customer support system that routes incoming requests to the appro
 - Supports demo mode and OpenAI-backed processing
 - Exposes a FastAPI backend and React frontend
 
-## Architecture
-
-```text
-Customer Request
-       ↓
-   Router Agent
-       ↓
- ┌─────┼─────────┐
- ↓     ↓         ↓
-Billing Technical General
- Agent    Agent    Agent
- └─────┼─────────┘
-       ↓
-Structured Support Response
 ## Example
 
 ![Support Analysis](docs/analysis.png)
@@ -43,6 +29,21 @@ A request such as:
 I was charged twice for my subscription.
 
 is routed to the Billing Agent, which returns the response together with the routing reasoning and resolution status.
+
+## Architecture
+
+```text
+Customer Request
+       ↓
+   Router Agent
+       ↓
+ ┌─────┼─────────┐
+ ↓     ↓         ↓
+Billing Technical General
+ Agent    Agent    Agent
+ └─────┼─────────┘
+       ↓
+Structured Support Response
 
 Tech Stack
 Python 3.14
